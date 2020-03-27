@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function AppHeader() {
+function AppInvite() {
   const classes = useStyles();
 
   return (
@@ -25,5 +25,5 @@ function AppHeader() {
   );
 }
 
-export default AppHeader;
+export default AppInvite;
 
