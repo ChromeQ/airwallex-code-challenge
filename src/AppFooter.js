@@ -1,5 +1,6 @@
 import React from 'react';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -16,11 +17,11 @@ function AppFooter() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Typography className={classes.root}>
       Made with <FavoriteIcon color="secondary" fontSize="small" className={classes.icon} /> in Melbourne, AUS
       <br />
       by Dav Hill as a coding challenge for Airwallex
-    </div>
+    </Typography>
   );
 }
 
