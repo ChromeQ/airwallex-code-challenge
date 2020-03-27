@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
 
-import broccoli from './img/broccoli.svg';
+import broccoli from './img/broccoli.svg'; // Free icon from https://www.flaticon.com/free-icon/broccoli_1135560
 
 const useStyles = makeStyles(theme => ({
   logo: {
@@ -20,7 +20,8 @@ const useStyles = makeStyles(theme => ({
   h1: {
     color: theme.palette.common.white,
     fontSize: theme.spacing(5),
-    fontWeight: theme.typography.fontWeightBold
+    fontWeight: theme.typography.fontWeightBold,
+    textTransform: 'uppercase'
   }
 }));
 

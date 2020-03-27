@@ -17,11 +17,9 @@ function AppFooter() {
 
   return (
     <div className={classes.root}>
-      <div>
-        Made with <FavoriteIcon color="secondary" fontSize="small" className={classes.icon} /> in Melbourne, AUS
-        <br />
-        by Dav Hill as a coding challenge for Airwallex
-      </div>
+      Made with <FavoriteIcon color="secondary" fontSize="small" className={classes.icon} /> in Melbourne, AUS
+      <br />
+      by Dav Hill as a coding challenge for Airwallex
     </div>
   );
 }

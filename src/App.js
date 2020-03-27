@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { lightGreen } from '@material-ui/core/colors';
 
 import AppHeader from './AppHeader';
+import AppInvite from './AppInvite';
 import AppFooter from './AppFooter';
 
 const useStyles = makeStyles(theme => {
@@ -40,8 +41,8 @@ function App() {
       </Grid>
 
       <Grid xs item container justify="center" className={classes.content}>
-        <Grid xs item container sm={10} md={8} alignItems="center">
-          This is the content
+        <Grid xs item container sm={9} md={7} alignItems="center">
+          <AppInvite />
         </Grid>
       </Grid>
 
