@@ -7,7 +7,7 @@ function Modal(props) {
   const { open, onClose: handleClose, title } = props;
 
   return (
-    <Dialog open={open} onClose={handleClose} aria-labelledby="modal-dialog-title">
+    <Dialog open={open} onClose={handleClose} aria-labelledby="modal-dialog-title" fullWidth>
       {title && <DialogTitle id="modal-dialog-title">{title}</DialogTitle>}
 
       <DialogContent>
