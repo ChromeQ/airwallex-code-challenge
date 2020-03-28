@@ -31,7 +31,7 @@ function App() {
   const classes = useStyles();
 
   return (
-    <Grid container direction="column" justify="space-between" className={classes.root}>
+    <Grid container direction="column" justify="space-between" wrap="nowrap" className={classes.root}>
 
       <Grid item container component="header" justify="center" className={classes.header}>
         <Grid item xs sm={10} md={8}>
