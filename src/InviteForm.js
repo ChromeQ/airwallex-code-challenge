@@ -40,7 +40,9 @@ function InviteForm(props) {
       email: values.email
     });
 
-    callback();
+    if (status === 200 && !errorMessage) {
+      callback();
+    }
   }
 
   if (isPending) {
