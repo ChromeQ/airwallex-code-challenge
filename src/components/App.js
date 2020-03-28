@@ -6,26 +6,22 @@ import AppHeader from './AppHeader';
 import AppInvite from './AppInvite';
 import AppFooter from './AppFooter';
 
-const useStyles = makeStyles(theme => {
-  console.log(theme);
-
-  return ({
-    root: {
-      height: '100vh'
-    },
-    header: {
-      backgroundColor: theme.palette.primary.main,
-      padding: theme.spacing(2)
-    },
-    content: {
-      padding: theme.spacing(2)
-    },
-    footer: {
-      backgroundColor: theme.palette.grey[800],
-      padding: theme.spacing(2)
-    }
-  });
-});
+const useStyles = makeStyles(theme => ({
+  root: {
+    height: '100vh'
+  },
+  header: {
+    backgroundColor: theme.palette.primary.main,
+    padding: theme.spacing(2)
+  },
+  content: {
+    padding: theme.spacing(2)
+  },
+  footer: {
+    backgroundColor: theme.palette.grey[800],
+    padding: theme.spacing(2)
+  }
+}));
 
 function App() {
   const classes = useStyles();
