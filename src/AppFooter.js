@@ -15,13 +15,17 @@ const useStyles = makeStyles(theme => ({
 
 function AppFooter() {
   const classes = useStyles();
+  const year = new Date().getFullYear();
 
   return (
-    <Typography className={classes.root}>
-      Made with <FavoriteIcon color="secondary" fontSize="small" className={classes.icon} /> in Melbourne, AUS
-      <br />
-      by Dav Hill as a coding challenge for Airwallex
-    </Typography>
+    <div className={classes.root}>
+      <Typography paragraph>
+        Made with <FavoriteIcon color="secondary" fontSize="small" className={classes.icon} /> in Melbourne, AUS
+        <br />
+        by Dav Hill as a coding challenge for Airwallex
+      </Typography>
+      <Typography>&copy;{year} Broccoli &amp; Co. All rights reserved</Typography>
+    </div>
   );
 }
 

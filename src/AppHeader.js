@@ -3,13 +3,12 @@ import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
 
 import broccoli from './img/broccoli.svg'; // Free icon from https://www.flaticon.com/free-icon/broccoli_1135560
 
 const useStyles = makeStyles(theme => ({
   logo: {
-    border: `3px solid ${green[800]}`,
+    border: `3px solid ${theme.palette.primary.dark}`,
     backgroundColor: theme.palette.common.white,
     display: 'inline-block',
     marginRight: theme.spacing(2),

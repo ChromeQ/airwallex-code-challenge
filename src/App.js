@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import { lightGreen } from '@material-ui/core/colors';
 
 import AppHeader from './AppHeader';
 import AppInvite from './AppInvite';
@@ -15,7 +14,7 @@ const useStyles = makeStyles(theme => {
       height: '100vh'
     },
     header: {
-      backgroundColor: lightGreen[400],
+      backgroundColor: theme.palette.primary.main,
       padding: theme.spacing(2)
     },
     content: {

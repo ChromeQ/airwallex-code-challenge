@@ -74,7 +74,7 @@ function InviteForm(props) {
             endAdornment: (errors.name || dirty.name) && (
               <InputAdornment position="end">
                 {
-                  errors.name ? <ClearIcon color="secondary" /> :
+                  errors.name ? <ClearIcon color="error" /> :
                     dirty.name && <CheckIcon color="primary" />
                 }
               </InputAdornment>
@@ -100,7 +100,7 @@ function InviteForm(props) {
             endAdornment: (errors.email || dirty.email) && (
               <InputAdornment position="end">
                 {
-                  errors.email ? <ClearIcon color="secondary" /> :
+                  errors.email ? <ClearIcon color="error" /> :
                     dirty.email && <CheckIcon color="primary" />
                 }
               </InputAdornment>
@@ -126,7 +126,7 @@ function InviteForm(props) {
             endAdornment: (errors.confirmEmail || dirty.confirmEmail) && (
               <InputAdornment position="end">
                 {
-                  errors.confirmEmail ? <ClearIcon color="secondary" /> :
+                  errors.confirmEmail ? <ClearIcon color="error" /> :
                     dirty.confirmEmail && <CheckIcon color="primary" />
                 }
               </InputAdornment>
@@ -148,7 +148,7 @@ function InviteForm(props) {
         </Button>
 
         {errorMessage &&
-          <Typography paragraph align="center" color="secondary">Oops... {errorMessage}</Typography>
+          <Typography paragraph align="center" color="error">Oops... {errorMessage}</Typography>
         }
       </form>
     );
