@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { lightGreen } from '@material-ui/core/colors';
 
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
@@ -17,11 +17,9 @@ const theme = createMuiTheme({
 });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

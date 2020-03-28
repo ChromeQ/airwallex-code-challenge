@@ -8,9 +8,9 @@ import ClearIcon from '@material-ui/icons/Clear';
 import SendIcon from '@material-ui/icons/Send';
 import { makeStyles } from '@material-ui/core/styles';
 
-import useFormValidation from './useFormValidation';
-import useEndpoint from './useEndpoint';
-import validate from './InviteFormValidationRules';
+import useFormValidation from '../hooks/useFormValidation';
+import useEndpoint from '../hooks/useEndpoint';
+import validate from '../inviteFormValidationRules';
 import Spinner from './Spinner';
 
 const InviteFormSuccess = React.lazy(() => import('./InviteFormSuccess'));

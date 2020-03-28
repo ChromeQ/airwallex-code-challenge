@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-import broccoli from './img/broccoli.svg'; // Free icon from https://www.flaticon.com/free-icon/broccoli_1135560
+import broccoli from '../images/broccoli.svg'; // Free icon from https://www.flaticon.com/free-icon/broccoli_1135560
 
 const useStyles = makeStyles(theme => ({
   logo: {
