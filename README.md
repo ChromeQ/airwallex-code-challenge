@@ -31,4 +31,4 @@ Live validation is built in to the form, and become "active" only after form sub
 
 There are a variety of tests in the `src/component/tests` folder. They include some snapshot tests, some basic unit tests and some integration tests.  
 Tests are written using Jest and Enzyme.  
-Although the app is not completely covered in tests and is not exhausive I hope the tests available demonstrate a thorough understanding of front end testing.
+Although the app is not completely covered in tests and is not exhaustive I hope the tests available demonstrate a thorough understanding of front end testing.
