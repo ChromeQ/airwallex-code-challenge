@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the coding challenge completed by [Dav Hill](https://www.linkedin.com/in/dafydd-hill-55a32555/)
 
-## Available Scripts
+## Quick start
 
-In the project directory, you can run:
+In the root dir run `npm install` to install dependencies
+To run the app in dev mode use `npm start`
+Or build with `npm run build` and then you can view in a simple HTTP server such as: `python -m SimpleHTTPServer` from within the `build` dir
+Tests can be run using `npm test`
 
-### `npm start`
+## The App
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app is a single page React app which was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The app is a fully responsive down to a small mobile screen and up to large desktop screens.
 
-### `npm test`
+I decided to use Material UI as an alternative to Bootstrap as it brings a consistent look and feel to native apps, particularly for Android users. The theme is the default theme with only the primary colour overridden to match the green for Broccoli.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## UI/UX Extras
 
-### `npm run build`
+Although the app brief was a very simple one, I decided to use a few small extras to give it a more polished look and attention to detail.
+These include optimizations such as code splitting using React Suspense/Lazy, although not entirely necessary in this small app you can see a "skeleton" of the form whilst it is loading (Tip: Try throttling Chrome Network speed to Slow 3G before clicking the main home page button to see the skeleton loading page)
+There is also an indeterminate Loading spinner when waiting for the form to respond after submit.
+Live validation is built in to the form, and become "active" only after form submit or once a field's validation state changes from valid -> invalid. This means the input is not shown as invalid as soon as the user touches/types (or blurs out) an input. This is intentional as I believe it is bad UX to show errors whilst the user is still entering the current input.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tests
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+There are a variety of tests in the `src/component/tests` folder. They include some snapshot tests, some basic unit tests and some integration tests.
+Tests are written using Jest and Enzyme.
+Although the app is not completely covered in tests and is not exhausive I hope the tests available demonstrate a thorough understanding of front end testing.
