@@ -4,6 +4,7 @@ exports[`Shallow snapshot matches when not open 1`] = `
 <WithStyles(ForwardRef(Dialog))
   aria-labelledby="modal-dialog-title"
   fullWidth={true}
+  onClose={[Function]}
   open={false}
 >
   <WithStyles(ForwardRef(DialogContent)) />
@@ -14,6 +15,7 @@ exports[`Shallow snapshot matches with content 1`] = `
 <WithStyles(ForwardRef(Dialog))
   aria-labelledby="modal-dialog-title"
   fullWidth={true}
+  onClose={[Function]}
   open={false}
 >
   <WithStyles(ForwardRef(DialogContent))>
@@ -26,6 +28,7 @@ exports[`Shallow snapshot matches with title 1`] = `
 <WithStyles(ForwardRef(Dialog))
   aria-labelledby="modal-dialog-title"
   fullWidth={true}
+  onClose={[Function]}
   open={false}
 >
   <WithStyles(ForwardRef(DialogTitle))

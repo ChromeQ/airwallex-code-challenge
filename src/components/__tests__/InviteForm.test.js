@@ -6,6 +6,8 @@ import InviteForm from '../InviteForm';
 
 jest.mock('../../hooks/useEndpoint');
 
+const noop = () => { };
+
 const defaultEndpointState = {
   status: null,
   errorMessage: null,
@@ -24,7 +26,7 @@ describe('Snapshot tests', () => {
   });
 
   it('Shallow snapshot matches blank form', () => {
-    const wrapper = shallow(<InviteForm />);
+    const wrapper = shallow(<InviteForm onSubmit={noop} onComplete={noop} />);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -35,7 +37,7 @@ describe('Snapshot tests', () => {
       ...defaultEndpointState,
       isPending: true
     }));
-    const wrapper = shallow(<InviteForm />);
+    const wrapper = shallow(<InviteForm onSubmit={noop} onComplete={noop} />);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -46,7 +48,7 @@ describe('Snapshot tests', () => {
       ...defaultEndpointState,
       status: 200,
     }));
-    const wrapper = shallow(<InviteForm />);
+    const wrapper = shallow(<InviteForm onSubmit={noop} onComplete={noop} />);
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -54,7 +56,7 @@ describe('Snapshot tests', () => {
 
 // Assertions
 it('Should render the form with expected inputs', () => {
-  const wrapper = mount(<InviteForm />);
+  const wrapper = mount(<InviteForm onSubmit={noop} onComplete={noop} />);
   const form = wrapper.find('form');
 
   // Get references to the form elements
@@ -83,7 +85,7 @@ describe('integration tests', () => {
   });
 
   it('Should show validation errors when submitting invalid empty form', () => {
-    const wrapper = mount(<InviteForm onSubmit={jest.fn()} />);
+    const wrapper = mount(<InviteForm onSubmit={noop} onComplete={noop} />);
     const form = wrapper.find('form');
 
     let fields = wrapper.find('form input');
@@ -106,7 +108,7 @@ describe('integration tests', () => {
   });
 
   it('Should not mark input as invalid when blurring away from input', () => {
-    const wrapper = mount(<InviteForm onSubmit={jest.fn()} />);
+    const wrapper = mount(<InviteForm onSubmit={noop} onComplete={noop} />);
 
     let field = wrapper.find('form input[name="name"]');
     let invalid = field.filter('[aria-invalid=true]');
@@ -129,7 +131,7 @@ describe('integration tests', () => {
   });
 
   it('Should mark input as valid when meeting validation rules', () => {
-    const wrapper = mount(<InviteForm onSubmit={jest.fn()} />);
+    const wrapper = mount(<InviteForm onSubmit={noop} onComplete={noop} />);
 
     let field = wrapper.find('form input[name="name"]');
     let invalid = field.filter('[aria-invalid=true]');
@@ -155,7 +157,7 @@ describe('integration tests', () => {
   });
 
   it('Should mark input as invalid with live validation', () => {
-    const wrapper = mount(<InviteForm onSubmit={jest.fn()} />);
+    const wrapper = mount(<InviteForm onSubmit={noop} onComplete={noop} />);
 
     let field = wrapper.find('form input[name="name"]');
     let invalid = field.filter('[aria-invalid=true]');
@@ -200,7 +202,7 @@ describe('integration tests', () => {
 
   it('Should submit the valid form and call the submit handler callback', (done) => {
     // Pass the async done as the submit callback on successful form submit
-    const wrapper = mount(<InviteForm onSubmit={done} />);
+    const wrapper = mount(<InviteForm onSubmit={done} onComplete={noop} />);
     const form = wrapper.find('form');
 
     // Get references to the form elements

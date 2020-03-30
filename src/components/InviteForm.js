@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -157,5 +158,10 @@ function InviteForm(props) {
     );
   }
 }
+
+InviteForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  onComplete: PropTypes.func.isRequired
+};
 
 export default InviteForm;

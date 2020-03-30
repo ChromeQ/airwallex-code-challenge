@@ -3,9 +3,11 @@ import { shallow, mount } from 'enzyme';
 
 import InviteFormSuccess from '../InviteFormSuccess';
 
+const noop = () => { };
+
 // Snapshots
 it('Shallow snapshot matches', () => {
-    const wrapper = shallow(<InviteFormSuccess />);
+    const wrapper = shallow(<InviteFormSuccess onClickComplete={noop} />);
 
     expect(wrapper).toMatchSnapshot();
 });

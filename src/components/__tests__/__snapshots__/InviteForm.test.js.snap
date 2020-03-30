@@ -87,6 +87,8 @@ exports[`Snapshot tests Shallow snapshot matches successful form submit 1`] = `
 <Suspense
   fallback={<Spinner />}
 >
-  <lazy />
+  <lazy
+    onClickComplete={[Function]}
+  />
 </Suspense>
 `;

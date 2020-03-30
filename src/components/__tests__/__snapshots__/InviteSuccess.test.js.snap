@@ -12,6 +12,7 @@ exports[`Shallow snapshot matches 1`] = `
   </WithStyles(ForwardRef(Typography))>
   <WithStyles(ForwardRef(Button))
     color="primary"
+    onClick={[Function]}
     size="large"
     variant="contained"
   >
