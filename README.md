@@ -15,6 +15,8 @@ The app is a fully responsive down to a small mobile screen and up to large desk
 
 I decided to use Material UI as an alternative to Bootstrap as it brings a consistent look and feel to native apps, particularly for Android users. The theme is the default theme with only the primary colour overridden to match the green for Broccoli.
 
+Material UI uses modern CSS which is similar to Styled Components, I have left the CSS blocks in the React files for ease of use and to see the styles applied close to the source, of course these could be moved to another file and imported.
+
 ## UI/UX Extras
 
 Although the app brief was a very simple one, I decided to use a few small extras to give it a more polished look and attention to detail.
