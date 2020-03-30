@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow snapshot matches 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  container={true}
+  wrap="nowrap"
+>
+  <WithStyles(ForwardRef(Avatar))
+    alt="Broccoli & Co. Logo"
+    className="makeStyles-logo-1"
+    src="broccoli.svg"
+  />
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-h1-2"
+    display="inline"
+    variant="h1"
+  >
+    Broccoli & Co.
+  </WithStyles(ForwardRef(Typography))>
+</WithStyles(ForwardRef(Grid))>
+`;

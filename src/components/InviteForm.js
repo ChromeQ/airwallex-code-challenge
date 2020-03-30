@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function InviteForm(props) {
-  const { onSubmit: callback, onComplete } = props;
+  const { onSubmit, onComplete } = props;
   const { handleBlur, handleChange, handleSubmit, dirty, errors, values } = useFormValidation(handleSubmitSuccess, validate);
   const { status, errorMessage, isPending, request } = useEndpoint(inviteFormUrl, 'POST');
   const classes = useStyles();
@@ -41,7 +41,7 @@ function InviteForm(props) {
     });
 
     if (status === 200 && !errorMessage) {
-      callback();
+      onSubmit();
     }
   }
 
@@ -71,11 +71,12 @@ function InviteForm(props) {
           margin="normal"
           variant="outlined"
           InputProps={{
+            className: errors.name ? 'input-error' : '',
             endAdornment: (errors.name || dirty.name) && (
               <InputAdornment position="end">
                 {
-                  errors.name ? <ClearIcon color="error" /> :
-                    dirty.name && <CheckIcon color="primary" />
+                  errors.name ? <ClearIcon color="error" className="isInvalid" /> :
+                    dirty.name && <CheckIcon color="primary" className="isValid" />
                 }
               </InputAdornment>
             )
@@ -97,6 +98,7 @@ function InviteForm(props) {
           type="email"
           variant="outlined"
           InputProps={{
+            className: errors.email ? 'input-error' : '',
             endAdornment: (errors.email || dirty.email) && (
               <InputAdornment position="end">
                 {
@@ -123,6 +125,7 @@ function InviteForm(props) {
           type="email"
           variant="outlined"
           InputProps={{
+            className: errors.confirmEmail ? 'input-error' : '',
             endAdornment: (errors.confirmEmail || dirty.confirmEmail) && (
               <InputAdornment position="end">
                 {

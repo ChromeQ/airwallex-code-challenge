@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow snapshot matches 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Skeleton))
+    animation="wave"
+    className="makeStyles-input-2"
+    height={56}
+    variant="rect"
+    width="100%"
+  />
+  <WithStyles(ForwardRef(Skeleton))
+    animation="wave"
+    className="makeStyles-input-2"
+    height={56}
+    variant="rect"
+    width="100%"
+  />
+  <WithStyles(ForwardRef(Skeleton))
+    animation="wave"
+    className="makeStyles-input-2"
+    height={56}
+    variant="rect"
+    width="100%"
+  />
+  <WithStyles(ForwardRef(Skeleton))
+    animation="wave"
+    className="makeStyles-button-3"
+    height={42}
+    variant="rect"
+    width="100%"
+  />
+</div>
+`;

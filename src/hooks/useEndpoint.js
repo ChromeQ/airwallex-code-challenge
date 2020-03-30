@@ -2,10 +2,11 @@ import { useState } from 'react';
 
 const useEndpoint = (url, method) => {
     const [isPending, setIsPending] = useState(false);
-    const [status, setStatus] = useState();
-    const [errorMessage, setErrorMessage] = useState();
+    const [status, setStatus] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
 
     const request = async data => {
+        console.log('UIGHFDUI')
         if (isPending) {
             return;
         }

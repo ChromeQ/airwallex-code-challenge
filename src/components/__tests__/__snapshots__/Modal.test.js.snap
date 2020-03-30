@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow snapshot matches when not open 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  aria-labelledby="modal-dialog-title"
+  fullWidth={true}
+  open={false}
+>
+  <WithStyles(ForwardRef(DialogContent)) />
+</WithStyles(ForwardRef(Dialog))>
+`;
+
+exports[`Shallow snapshot matches with content 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  aria-labelledby="modal-dialog-title"
+  fullWidth={true}
+  open={false}
+>
+  <WithStyles(ForwardRef(DialogContent))>
+    Foo Bar
+  </WithStyles(ForwardRef(DialogContent))>
+</WithStyles(ForwardRef(Dialog))>
+`;
+
+exports[`Shallow snapshot matches with title 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  aria-labelledby="modal-dialog-title"
+  fullWidth={true}
+  open={false}
+>
+  <WithStyles(ForwardRef(DialogTitle))
+    id="modal-dialog-title"
+  >
+    foobar
+  </WithStyles(ForwardRef(DialogTitle))>
+  <WithStyles(ForwardRef(DialogContent)) />
+</WithStyles(ForwardRef(Dialog))>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow snapshot matches 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    align="center"
+    paragraph={true}
+  >
+    You will be one of the first to experience Broccoli & Co. when we launch
+  </WithStyles(ForwardRef(Typography))>
+  <WithStyles(ForwardRef(Button))
+    color="primary"
+    size="large"
+    variant="contained"
+  >
+    Ok
+  </WithStyles(ForwardRef(Button))>
+</div>
+`;

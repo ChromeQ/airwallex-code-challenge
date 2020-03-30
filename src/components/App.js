@@ -35,7 +35,7 @@ function App() {
         </Grid>
       </Grid>
 
-      <Grid xs item container justify="center" className={classes.content}>
+      <Grid xs item container justify="center" className={`app-content ${classes.content}`}>
         <Grid xs item container sm={9} md={7} justify="center" alignItems="center">
           <AppInvite />
         </Grid>

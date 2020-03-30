@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow snapshot matches 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    paragraph={true}
+  >
+    Made with 
+    <FavoriteIcon
+      className="makeStyles-icon-2"
+      color="secondary"
+      fontSize="small"
+    />
+     in Melbourne, AUS
+    <br />
+    by Dav Hill as a coding challenge for Airwallex
+  </WithStyles(ForwardRef(Typography))>
+  <WithStyles(ForwardRef(Typography))>
+    ©
+    2020
+     Broccoli & Co. All rights reserved
+  </WithStyles(ForwardRef(Typography))>
+</div>
+`;

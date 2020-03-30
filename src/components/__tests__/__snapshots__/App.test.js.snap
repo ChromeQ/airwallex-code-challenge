@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shallow snapshot matches 1`] = `
+<WithStyles(ForwardRef(Grid))
+  className="makeStyles-root-1"
+  container={true}
+  direction="column"
+  justify="space-between"
+  wrap="nowrap"
+>
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-header-2"
+    component="header"
+    container={true}
+    item={true}
+    justify="center"
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={8}
+      sm={10}
+      xs={true}
+    >
+      <AppHeader />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    className="app-content makeStyles-content-3"
+    container={true}
+    item={true}
+    justify="center"
+    xs={true}
+  >
+    <WithStyles(ForwardRef(Grid))
+      alignItems="center"
+      container={true}
+      item={true}
+      justify="center"
+      md={7}
+      sm={9}
+      xs={true}
+    >
+      <AppInvite />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    className="makeStyles-footer-4"
+    component="footer"
+    container={true}
+    item={true}
+    justify="center"
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={8}
+      sm={10}
+      xs={true}
+    >
+      <AppFooter />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

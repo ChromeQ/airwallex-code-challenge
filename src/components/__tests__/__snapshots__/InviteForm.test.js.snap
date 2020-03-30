@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests Shallow snapshot matches Spinner when form is pending 1`] = `<Spinner />`;
+
+exports[`Snapshot tests Shallow snapshot matches blank form 1`] = `
+<form
+  autoComplete="off"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <WithStyles(ForwardRef(TextField))
+    InputProps={
+      Object {
+        "className": "",
+        "endAdornment": undefined,
+      }
+    }
+    autoFocus={true}
+    error={false}
+    fullWidth={true}
+    id="name"
+    label="Full name"
+    margin="normal"
+    name="name"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    value=""
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(TextField))
+    InputProps={
+      Object {
+        "className": "",
+        "endAdornment": undefined,
+      }
+    }
+    error={false}
+    fullWidth={true}
+    id="email"
+    label="Email"
+    margin="normal"
+    name="email"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value=""
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(TextField))
+    InputProps={
+      Object {
+        "className": "",
+        "endAdornment": undefined,
+      }
+    }
+    error={false}
+    fullWidth={true}
+    id="confirm-email"
+    label="Confirm email"
+    margin="normal"
+    name="confirmEmail"
+    onBlur={[Function]}
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value=""
+    variant="outlined"
+  />
+  <WithStyles(ForwardRef(Button))
+    className="makeStyles-button-1"
+    color="primary"
+    disabled={false}
+    endIcon={<UNDEFINED />}
+    fullWidth={true}
+    size="large"
+    type="submit"
+    variant="contained"
+  >
+    Send
+  </WithStyles(ForwardRef(Button))>
+</form>
+`;
+
+exports[`Snapshot tests Shallow snapshot matches successful form submit 1`] = `
+<Suspense
+  fallback={<Spinner />}
+>
+  <lazy />
+</Suspense>
+`;
